@@ -37,3 +37,7 @@ Do NOT include quotes (single or double) in the output.
 .............            3         ..................
 3)Nesting For Loops :
 Multiplying or Product of all the numbers in an array.
+
+.............            4         ..................
+3)Replacing Loop with Recursion :
+Multiplying or Product "n" numbers of an array.

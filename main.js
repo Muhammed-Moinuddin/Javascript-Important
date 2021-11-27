@@ -86,3 +86,16 @@ function multiplyAll(arr) {
   }
   
   multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+/*.......................4 .......................*/
+arr1 = [1,2,3,4,5,6,7,8];
+let n;
+function multiply(arr1,n){
+   if (n <= 0) {
+     return 1;
+   }
+  else {
+     return multiply(arr1,n-1) * arr1[n-1];
+   }
+}
+console.log(multiply(arr1,6))
