@@ -1,4 +1,4 @@
-/*........................1.........................*/
+/*........................ 1 .........................*/
 // Setup
 const recordCollection = {
     2548: {
@@ -40,7 +40,7 @@ const recordCollection = {
   updateRecords(recordCollection, 5439, 'artist', 'ABBA');
   
   
-  /*.......................2.......................*/
+  /*....................... 2 .......................*/
   function cc(card) {
     switch (card) {
       case 2:
@@ -71,7 +71,7 @@ const recordCollection = {
   cc("K");
   cc("A");  
 
-/*.......................3.......................*/
+/*....................... 3 .......................*/
 function multiplyAll(arr) {
     let product = 1;
     // Only change code below this line
@@ -87,7 +87,7 @@ function multiplyAll(arr) {
   
   multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
-/*.......................4 .......................*/
+/*....................... 4 .......................*/
 arr1 = [1,2,3,4,5,6,7,8];
 let n;
 function multiply(arr1,n){
@@ -99,3 +99,15 @@ function multiply(arr1,n){
    }
 }
 console.log(multiply(arr1,6))
+
+/*....................... 5 .......................*/
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5));

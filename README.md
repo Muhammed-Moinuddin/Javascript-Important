@@ -39,5 +39,9 @@ Do NOT include quotes (single or double) in the output.
 Multiplying or Product of all the numbers in an array.
 
 .............            4         ..................
-3)Replacing Loop with Recursion :
+4)Replacing Loop with Recursion :
 Multiplying or Product "n" numbers of an array.
+
+.............            5         ..................
+5)Create an array upto n (just by inputting a number) 
+Write a recursive function that returns an array containing the numbers 1 through n. This function will need to accept an argument, n, representing the final number. Then it will need to call itself with progressively smaller values of n until it reaches 1.
