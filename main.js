@@ -19,27 +19,27 @@ const recordCollection = {
       albumTitle: 'ABBA Gold'
     }
   };
-  
+
   // Only change code below this line
   function updateRecords(records, id, prop, value) {
     if (prop != "tracks" && value != "") {
       records[id][prop] = value;
-    } 
+    }
     else if (prop == "tracks" && records[id].hasOwnProperty("tracks") == false) {
       records[id][prop] = [value];
     }
     else if (prop == "tracks" && value != "") {
       records[id][prop].push(value);
-    } 
+    }
     else if (value == "") {
       delete records[id][prop];
     }
     return records;
   }
-  
+
   updateRecords(recordCollection, 5439, 'artist', 'ABBA');
-  
-  
+
+
   /*....................... 2 .......................*/
   function cc(card) {
     switch (card) {
@@ -62,14 +62,14 @@ const recordCollection = {
     if (count < 0) {
       check = "Bet";
     }
-  
+
     return count + " " + check;
   }
   cc(2);
   cc(3);
   cc(7);
   cc("K");
-  cc("A");  
+  cc("A");
 
 /*....................... 3 .......................*/
 function multiplyAll(arr) {
@@ -84,7 +84,7 @@ function multiplyAll(arr) {
     console.log("Product is equal to",product);
     return product;
   }
-  
+
   multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
 /*....................... 4 .......................*/
@@ -153,4 +153,9 @@ function lookUpProfile(name, prop) {
   return "No such contact"
 }
 
-lookUpProfile("Akira", "likes");  
+lookUpProfile("Akira", "likes");
+
+/*....................... 7 .......................*/
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+let result = userCheck.test(username);

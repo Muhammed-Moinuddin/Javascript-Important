@@ -1,5 +1,5 @@
 # Javascript-Important
-A repository containing the tasks that were difficult to do.   
+A repository containing the tasks that were difficult to do.
 //////////////////////////////////////////////..................DIFFICULT..................////////////////////////////////////////////////////////
 
 .............            1         ..................
@@ -43,7 +43,7 @@ Multiplying or Product of all the numbers in an array.
 Multiplying or Product "n" numbers of an array.
 
 .............            5         ..................
-5)Create an array upto n (just by inputting a number) 
+5)Create an array upto n (just by inputting a number)
 Write a recursive function that returns an array containing the numbers 1 through n. This function will need to accept an argument, n, representing the final number. Then it will need to call itself with progressively smaller values of n until it reaches 1.
 
 .............            6         ..................
@@ -59,3 +59,14 @@ If both are true, then return the "value" of that property.
 If name does not correspond to any contacts then return the string No such contact.
 
 If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.
+
+.............            7         ..................
+7)Restrict Possible Usernames :
+Usernames are used everywhere on the internet. They are what give users a unique identity on their favorite sites.
+
+You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+
+1)Usernames can only use alpha-numeric characters.
+2)The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+3)Username letters can be lowercase and uppercase.
+4)Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
