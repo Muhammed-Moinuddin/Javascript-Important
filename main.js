@@ -159,3 +159,37 @@ lookUpProfile("Akira", "likes");
 let username = "JackOfAllTrades";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 let result = userCheck.test(username);
+
+/*....................... 8 .......................*/ //FUNCTIONAL PROGRAMMING PART 3
+//tabs is an array of titles of each site open in window
+const Window = function(tabs) {
+  this.tabs = tabs;
+}
+//When you join two windows into one window
+Window.prototype.join = function(otherWindow) {
+  this.tabs = this.tabs.concat(otherWindow.tabs);
+  return this;
+}
+//when you open a new tab at the end
+Window.prototype.tabOpen = function(tab) {
+  this.tabs.push("new tab"); //lets open a new tab for now
+  return this;
+}
+//When you close a tab
+Window.prototype.tabClose = function(index){
+  const tabsBeforeIndex = this.tabs.splice(0, index);
+  const tabsAfterIndex = this.tabs.splice(1);
+  this.tabs = tabsBeforeIndex.concat(tabsAfterIndex);
+  return this
+}
+// Let's create three browser windows
+const workWindow = new Window(["Gmail" , "Github" , "FCC" , "Codepen"]);
+const socialWindow = new Window(["FB" , "Watsapp" , "Instagram"]);
+const videoWindow = new Window(["Netflix" , "Youtube" , "Dailymotion" , "Dmasti"]);
+
+//Now perform tab opening, closing & other operations
+const finalTabs = socialWindow
+  .tabOpen()
+  .join(videoWindow.tabClose(2))
+  .join(workWindow.tabClose(1).tabOpen());
+console.log(finalTabs.tabs)
